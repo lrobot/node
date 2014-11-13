@@ -12,7 +12,7 @@
   'targets': [
     {
       'target_name': 'openssl',
-      'type': '<(library)',
+      'type': '<(componenta)',
       'sources': [
         'openssl/ssl/bio_ssl.c',
         'openssl/ssl/d1_both.c',
@@ -829,13 +829,13 @@
             }],
             ['target_arch=="arm"', {
               'sources': [
-                'asm/arm-elf-gas/aes/aes-armv4.s',
-                'asm/arm-elf-gas/bn/armv4-mont.s',
-                'asm/arm-elf-gas/bn/armv4-gf2m.s',
-                'asm/arm-elf-gas/sha/sha1-armv4-large.s',
-                'asm/arm-elf-gas/sha/sha512-armv4.s',
-                'asm/arm-elf-gas/sha/sha256-armv4.s',
-                'asm/arm-elf-gas/modes/ghash-armv4.s',
+                'asm/arm-elf-gas/aes/aes-armv4.S',
+                'asm/arm-elf-gas/bn/armv4-mont.S',
+                'asm/arm-elf-gas/bn/armv4-gf2m.S',
+                'asm/arm-elf-gas/sha/sha1-armv4-large.S',
+                'asm/arm-elf-gas/sha/sha512-armv4.S',
+                'asm/arm-elf-gas/sha/sha256-armv4.S',
+                'asm/arm-elf-gas/modes/ghash-armv4.S',
                 # No asm available
                 'openssl/crypto/aes/aes_cbc.c',
                 'openssl/crypto/bf/bf_enc.c',
