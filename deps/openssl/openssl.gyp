@@ -12,7 +12,7 @@
   'targets': [
     {
       'target_name': 'openssl',
-      'type': '<(componenta)',
+      'type': '<(component)',
       'sources': [
         'openssl/ssl/bio_ssl.c',
         'openssl/ssl/d1_both.c',
